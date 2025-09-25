@@ -16,11 +16,23 @@ public class ArrayUtils
         }
     }
 
+    public static void displayArray(String[] array)
+    {
+        for (int i = 0; i < array.length; i++)
+        {
+            System.out.println("Element at index " + i + ": " + array[i]);
+        }
+    }
+
     public static void main(String[] args)
     {
-        int[] array = {5, 10, 15, 20, 25};
+        int[] arrayI = {5, 10, 15, 20, 25};
+        String[] arrayS = {"Some", "thing"};
 
-        System.out.println("Displaying array:");
-        displayArray(array);
+        System.out.println("Displaying integer array:");
+        displayArray(arrayI);
+
+        System.out.println("\nDisplaying string array:");
+        displayArray(arrayS);
     }
 }
