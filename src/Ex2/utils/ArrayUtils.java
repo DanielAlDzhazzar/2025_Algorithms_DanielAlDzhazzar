@@ -3,7 +3,7 @@ package Ex2.utils;
 public class ArrayUtils
 {
     /**
-     * Displays all elements in an array with their position.
+     * Displays all elements in an integer array with their position.
      *
      *
      * @param array int array whose elements are to be displayed
@@ -15,6 +15,13 @@ public class ArrayUtils
             System.out.println("Element at index " + i + ": " + array[i]);
         }
     }
+
+    /**
+     * Displays all elements in a string array with their position.
+     *
+     *
+     * @param array int array whose elements are to be displayed
+     **/
 
     public static void displayArray(String[] array)
     {
