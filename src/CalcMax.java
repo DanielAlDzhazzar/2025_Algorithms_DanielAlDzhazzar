@@ -33,14 +33,14 @@ public class CalcMax {
         }
     }
 
-    /***
+    /**
      * Returns the largest of three integers.
      *
      * @param a
      * @param b
      * @param c
      * @return
-     ***/
+     **/
 
     public static int findMax(int a, int b, int c)
     {
@@ -54,6 +54,24 @@ public class CalcMax {
         return max;
     }
 
+    /***
+     * Returns the largest integer in an array.
+     * @param array
+     * @return
+     **/
+
+    public static int findMax(int[] array)
+    {
+        int max = array[0];
+        for (int i = 1; i < array.length; i++)
+        {
+            if (array[i] > max) {
+                max = array[i];
+            }
+        }
+        return max;
+    }
+
     public static void main(String[] args)
     {
         int num1 = getValidInteger("Please enter the first integer: ");
@@ -62,5 +80,16 @@ public class CalcMax {
 
         int highest = findMax(num1, num2, num3);
         System.out.println("The highest number out of 3 is: " + highest);
+
+        int arraySize = getValidInteger("\nEnter the size of the array: ");
+        int[] array = new int[arraySize];
+
+        for (int i = 0; i < arraySize; i++)
+        {
+            array[i] = getValidInteger("Enter integer for element " + (i + 1) + ": ");
+        }
+
+        int arrayMax = findMax(array);
+        System.out.println("The highest number in the array is: " + arrayMax);
     }
 }
