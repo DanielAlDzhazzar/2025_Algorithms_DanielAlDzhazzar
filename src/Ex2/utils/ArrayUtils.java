@@ -5,7 +5,7 @@ public class ArrayUtils
     /**
      * Displays all elements in an array with their position.
      *
-     * @param array
+     * @param array int array whose elements are to be displayed
      **/
     public static void displayArray(int[] array)
     {
