@@ -31,6 +31,13 @@ public class ArrayUtils
         }
     }
 
+    /**
+     * Calculates the average of an integer array.
+     *
+     * @param array whose average is to calculate
+     * @return average
+     **/
+
     public static double calcAverage(int[] array) {
         int sum = 0;
         for (int i = 0; i < array.length; i++) {
