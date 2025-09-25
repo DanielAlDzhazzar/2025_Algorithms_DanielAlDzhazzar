@@ -31,6 +31,14 @@ public class ArrayUtils
         }
     }
 
+    public static double calcAverage(int[] array) {
+        int sum = 0;
+        for (int i = 0; i < array.length; i++) {
+            sum += array[i];
+        }
+        return (double) sum / array.length;
+    }
+
     public static void main(String[] args)
     {
         int[] arrayI = {5, 10, 15, 20, 25};
@@ -41,5 +49,8 @@ public class ArrayUtils
 
         System.out.println("\nDisplaying string array:");
         displayArray(arrayS);
+
+        double avg = calcAverage(arrayI);
+        System.out.println("\nDisplaying average: " + avg);
     }
 }
