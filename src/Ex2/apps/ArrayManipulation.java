@@ -12,6 +12,12 @@ public class ArrayManipulation {
         for (int i = 0; i < grades.length; i++) {
             grades[i] = InputUtility.getValidInteger("Grade " + (i + 1) + ": ");
         }
+
+        System.out.println();
+        ArrayUtils.displayArray(grades);
+
+        double average = ArrayUtils.calcAverage(grades);
+        System.out.println("\nGPA: " + average);
     }
 }
 
