@@ -12,7 +12,8 @@ public class CalcMax {
      * @return the entered and validated integer
     **/
 
-    public static int getValidInteger(String prompt) {
+    public static int getValidInteger(String prompt)
+    {
         int storedValue;
         while (true)
         {
@@ -32,8 +33,34 @@ public class CalcMax {
         }
     }
 
-    public static void main(String[] args) {
-        int value = getValidInteger("Please enter an integer: ");
-        System.out.println("You checked integer is: " + value);
+    /***
+     * Returns the largest of three integers.
+     *
+     * @param a
+     * @param b
+     * @param c
+     * @return
+     ***/
+
+    public static int findMax(int a, int b, int c)
+    {
+        int max = a;
+        if (b > max) {
+            max = b;
+        }
+        if (c > max) {
+            max = c;
+        }
+        return max;
+    }
+
+    public static void main(String[] args)
+    {
+        int num1 = getValidInteger("Please enter the first integer: ");
+        int num2 = getValidInteger("Please enter the second integer: ");
+        int num3 = getValidInteger("Please enter the third integer: ");
+
+        int highest = findMax(num1, num2, num3);
+        System.out.println("The highest number out of 3 is: " + highest);
     }
 }
