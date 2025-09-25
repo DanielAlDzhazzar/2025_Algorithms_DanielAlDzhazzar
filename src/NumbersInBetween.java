@@ -23,5 +23,4 @@ public class NumbersInBetween
 
         System.out.println(sum);
     }
-
 }
