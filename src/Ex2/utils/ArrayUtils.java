@@ -46,6 +46,17 @@ public class ArrayUtils
         return (double) sum / array.length;
     }
 
+    public static int findMax(int[] array){
+        int high = 1;
+
+        for(int i = 0; i < array.length; i++){
+            if(high < array[i]){
+                high = array[i];
+            }
+        }
+        return high;
+    }
+
     public static void main(String[] args)
     {
         int[] arrayI = {5, 10, 15, 20, 25};
@@ -57,7 +68,9 @@ public class ArrayUtils
         System.out.println("\nDisplaying string array:");
         displayArray(arrayS);
 
-        double avg = calcAverage(arrayI);
-        System.out.println("\nDisplaying average: " + avg);
+        System.out.println("\nDisplaying average: " + calcAverage(arrayI));
+
+        System.out.println("\nHighest number in array: " + findMax(arrayI));
+
     }
 }
