@@ -28,6 +28,9 @@ public class ArrayManipulation {
         int count = ArrayUtils.count(grades, 70);
         System.out.println("\nSubjects scored 70: " + count);
 
+        int mostFrequent = ArrayUtils.getMostFrequent(grades);
+        System.out.println("\nMost frequent grade: " + mostFrequent);
+
         String[] text = new String[10];
 
         System.out.println("\nEnter 10 text:");
