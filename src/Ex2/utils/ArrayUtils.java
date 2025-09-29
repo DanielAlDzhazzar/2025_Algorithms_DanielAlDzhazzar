@@ -83,6 +83,13 @@ public class ArrayUtils
         return array[array.length - 1];
     }
 
+    /**
+     * Method which compare each number in array to determine and return the lowest one
+     *
+     * @param array whose lowest to calculate
+     * @return lowest
+     */
+
     public static int findMin(int[] array)
     {
         int low = Integer.MAX_VALUE;
