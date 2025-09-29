@@ -197,6 +197,13 @@ public class ArrayUtils
 
     }
 
+    /**
+     * method to count amount of numbers which are greater than average
+     *
+     * @param array array to determine average
+     * @return amount of numbers which are greater than average
+     */
+
     public static int countGreaterThanAverage(int[] array)
     {
         double average = calcAverage(array);
