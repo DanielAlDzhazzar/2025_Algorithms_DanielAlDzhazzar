@@ -119,6 +119,14 @@ public class ArrayUtils
         return array[0];
     }
 
+    /**
+     * method to count frequency of provided number
+     *
+     * @param array number in which we need to count provided value
+     * @param value provided value to count
+     * @return counting of provided number
+     */
+
     public static int count(int[] array, int value)
     {
         int count = 0;
@@ -132,6 +140,13 @@ public class ArrayUtils
         }
         return count;
     }
+
+    /**
+     * Method to find the most frequent number in an array
+     *
+     * @param array array whose numbers to be counted for frequency
+     * @return most frequent number
+     */
 
     public static int getMostFrequent(int[] array)
     {
