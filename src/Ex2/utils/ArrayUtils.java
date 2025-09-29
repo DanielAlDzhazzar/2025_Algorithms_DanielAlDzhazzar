@@ -83,6 +83,20 @@ public class ArrayUtils
         return array[array.length - 1];
     }
 
+    public static int findMin(int[] array)
+    {
+        int low = Integer.MAX_VALUE;
+
+        for(int i = 0; i < array.length; i++)
+        {
+            if(low > array[i])
+            {
+                low = array[i];
+            }
+        }
+        return low;
+    }
+
     public static void main(String[] args)
     {
         int[] arrayI = {5, 10, 15, 20, 25};
@@ -99,5 +113,7 @@ public class ArrayUtils
         System.out.println("\nHighest number in array: " + findMax(arrayI));
 
         System.out.println("\nLast element in alphabetical array: " + findMax(arrayS));
+
+        System.out.println("\nLowest number in array: " + findMin(arrayI));
     }
 }
