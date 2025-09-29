@@ -69,6 +69,13 @@ public class ArrayUtils
         return high;
     }
 
+    /**
+     * method which sort an array and returns last element of it
+     *
+     * @param array whose strings to sort
+     * @return last element
+     */
+
     public static String findMax(String[] array)
     {
         Arrays.sort(array);
