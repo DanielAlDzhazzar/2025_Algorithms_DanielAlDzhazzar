@@ -127,7 +127,7 @@ public class ArrayUtils
      * @return counting of provided number
      */
 
-    public static int count(int[] array, int value)
+    public static int count(int[] array, double value)
     {
         int count = 0;
 
@@ -182,7 +182,7 @@ public class ArrayUtils
      * @return amount of number greater than average
      */
 
-    public static int countGreater(int[] array, int value)
+    public static int countGreater(int[] array, double value)
     {
         int count = 0;
 
@@ -197,9 +197,16 @@ public class ArrayUtils
 
     }
 
+    public static int countGreaterThanAverage(int[] array)
+    {
+        double average = calcAverage(array);
+
+        return countGreater(array, average);
+    }
+
     public static void main(String[] args)
     {
-        int value = 5;
+        double value = 5;
         int[] arrayI = {5, 5, 5, 10, 10, 15, 15, 15, 15, 20, 20, 25};
         String[] arrayS = {"zeta", "Some", "thing"};
 
@@ -224,5 +231,7 @@ public class ArrayUtils
         System.out.println("\nNumber with highest frequency: " + getMostFrequent(arrayI));
 
         System.out.println("\nNumbers greater than value: " + countGreater(arrayI, value));
+
+        System.out.println("\nNumbers greater than average: " + countGreaterThanAverage(arrayI));
     }
 }
