@@ -178,7 +178,7 @@ public class ArrayUtils
      * method to count numbers which are greater than value provided
      *
      * @param array numbers to count
-     * @param value average
+     * @param value value to exceed
      * @return amount of number greater than average
      */
 
