@@ -36,6 +36,9 @@ public class ArrayManipulation {
 
         String last = ArrayUtils.findMax(text);
         System.out.println("Last element: " + last);
+
+        String first = ArrayUtils.findMin(text);
+        System.out.println("First element: " + first);
     }
 }
 
