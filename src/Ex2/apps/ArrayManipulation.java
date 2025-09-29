@@ -31,6 +31,9 @@ public class ArrayManipulation {
         int mostFrequent = ArrayUtils.getMostFrequent(grades);
         System.out.println("\nMost frequent grade: " + mostFrequent);
 
+        int higherThanGpa = ArrayUtils.countGreaterThanAverage(grades);
+        System.out.println("\nAmount of grades higher than GPA: " + higherThanGpa);
+
         String[] text = new String[10];
 
         System.out.println("\nEnter 10 text:");
