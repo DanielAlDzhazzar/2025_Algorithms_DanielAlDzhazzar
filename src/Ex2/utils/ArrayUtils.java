@@ -1,5 +1,7 @@
 package Ex2.utils;
 
+import java.util.Arrays;
+
 public class ArrayUtils
 {
     /**
@@ -53,21 +55,31 @@ public class ArrayUtils
      * @return highest
      */
 
-    public static int findMax(int[] array){
+    public static int findMax(int[] array)
+    {
         int high = 1;
 
-        for(int i = 0; i < array.length; i++){
-            if(high < array[i]){
+        for(int i = 0; i < array.length; i++)
+        {
+            if(high < array[i])
+            {
                 high = array[i];
             }
         }
         return high;
     }
 
+    public static String findMax(String[] array)
+    {
+        Arrays.sort(array);
+
+        return array[array.length - 1];
+    }
+
     public static void main(String[] args)
     {
         int[] arrayI = {5, 10, 15, 20, 25};
-        String[] arrayS = {"Some", "thing"};
+        String[] arrayS = {"zeta", "Some", "thing"};
 
         System.out.println("Displaying integer array:");
         displayArray(arrayI);
@@ -79,5 +91,6 @@ public class ArrayUtils
 
         System.out.println("\nHighest number in array: " + findMax(arrayI));
 
+        System.out.println("\nLast element in alphabetical array: " + findMax(arrayS));
     }
 }
