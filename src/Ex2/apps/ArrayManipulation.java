@@ -25,9 +25,12 @@ public class ArrayManipulation {
         int highest = ArrayUtils.findMax(grades);
         System.out.println("\nHighest: " + highest);
 
+        int count = ArrayUtils.count(grades, 70);
+        System.out.println("\nSubjects scored 70: " + count);
+
         String[] text = new String[10];
 
-        System.out.println("Enter 10 text:");
+        System.out.println("\nEnter 10 text:");
 
         for (int i = 0; i < grades.length; i++) {
             System.out.println("Text " + (i + 1) + ":");
