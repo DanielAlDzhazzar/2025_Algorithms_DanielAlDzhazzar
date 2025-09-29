@@ -46,6 +46,13 @@ public class ArrayUtils
         return (double) sum / array.length;
     }
 
+    /**
+     * Method which compare each number in array to determine and return the highest one
+     *
+     * @param array whose highest to calculate
+     * @return highest
+     */
+
     public static int findMax(int[] array){
         int high = 1;
 
