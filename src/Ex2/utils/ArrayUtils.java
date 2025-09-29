@@ -130,8 +130,33 @@ public class ArrayUtils
                 count++;
             }
         }
-
         return count;
+    }
+
+    public static int getMostFrequent(int[] array)
+    {
+        int count;
+        int highestCount = 0;
+        int mostFrequent = 0;
+
+        for(int i = 0; i < array.length; i++)
+        {
+            count = 0;
+            for (int j = 0; j < array.length; j++)
+            {
+                if(array[i] == array[j])
+                {
+                    count++;
+                }
+            }
+
+            if(highestCount < count)
+            {
+                highestCount = count;
+                mostFrequent = array[i];
+            }
+        }
+        return mostFrequent;
     }
 
     public static void main(String[] args)
@@ -157,5 +182,7 @@ public class ArrayUtils
         System.out.println("\nLowest number in array: " + findMin(arrayI));
 
         System.out.println("\nAmount of 5 in array: " + count(arrayI, value));
+
+        System.out.println("\nNumber with highest frequency: " + getMostFrequent(arrayI));
     }
 }
