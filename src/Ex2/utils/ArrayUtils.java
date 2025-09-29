@@ -104,6 +104,14 @@ public class ArrayUtils
         return low;
     }
 
+    /**
+     * method which sort an array and returns first element of it
+     * Note: I guess there is a mistake in method name, as logically it would be named findMin
+     *
+     * @param array whose strings to sort
+     * @return first element
+     */
+
     public static String findMin(String[] array)
     {
         Arrays.sort(array);
