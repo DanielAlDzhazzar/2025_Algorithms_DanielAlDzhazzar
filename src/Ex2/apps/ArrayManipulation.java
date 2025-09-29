@@ -18,6 +18,9 @@ public class ArrayManipulation {
 
         double average = ArrayUtils.calcAverage(grades);
         System.out.println("\nGPA: " + average);
+
+        int highest = ArrayUtils.findMax(grades);
+        System.out.println("\nHighest: " + highest);
     }
 }
 
