@@ -119,9 +119,25 @@ public class ArrayUtils
         return array[0];
     }
 
+    public static int count(int[] array, int value)
+    {
+        int count = 0;
+
+        for(int i = 0; i < array.length; i++)
+        {
+            if(array[i] == value)
+            {
+                count++;
+            }
+        }
+
+        return count;
+    }
+
     public static void main(String[] args)
     {
-        int[] arrayI = {5, 10, 15, 20, 25};
+        int value = 5;
+        int[] arrayI = {5, 5, 5, 10, 10, 15, 15, 15, 15, 20, 20, 25};
         String[] arrayS = {"zeta", "Some", "thing"};
 
         System.out.println("Displaying integer array:");
@@ -139,5 +155,7 @@ public class ArrayUtils
         System.out.println("\nFirst element in alphabetical array: " + findMin(arrayS));
 
         System.out.println("\nLowest number in array: " + findMin(arrayI));
+
+        System.out.println("\nAmount of 5 in array: " + count(arrayI, value));
     }
 }
