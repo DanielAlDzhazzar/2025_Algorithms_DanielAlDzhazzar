@@ -174,6 +174,14 @@ public class ArrayUtils
         return mostFrequent;
     }
 
+    /**
+     * method to count numbers which are greater than value provided
+     *
+     * @param array numbers to count
+     * @param value average
+     * @return amount of number greater than average
+     */
+
     public static int countGreater(int[] array, int value)
     {
         int count = 0;
