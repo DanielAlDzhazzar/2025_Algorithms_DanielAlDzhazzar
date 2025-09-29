@@ -174,6 +174,21 @@ public class ArrayUtils
         return mostFrequent;
     }
 
+    public static int countGreater(int[] array, int value)
+    {
+        int count = 0;
+
+        for(int i = 0; i < array.length; i++)
+        {
+            if(array[i] > value)
+            {
+                count++;
+            }
+        }
+        return count;
+
+    }
+
     public static void main(String[] args)
     {
         int value = 5;
@@ -199,5 +214,7 @@ public class ArrayUtils
         System.out.println("\nAmount of 5 in array: " + count(arrayI, value));
 
         System.out.println("\nNumber with highest frequency: " + getMostFrequent(arrayI));
+
+        System.out.println("\nNumbers greater than value: " + countGreater(arrayI, value));
     }
 }
