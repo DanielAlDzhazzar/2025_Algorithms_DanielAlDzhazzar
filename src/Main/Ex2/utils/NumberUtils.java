@@ -1,6 +1,15 @@
 package Main.Ex2.utils;
 
 public class NumberUtils {
+
+    /**
+     * to find first position of provided number in array
+     *
+     * @param array numerical array to search in
+     * @param num number to be find
+     * @return either position of provided number or a -1 if position is not found
+     */
+
     public static int getPos(int[] array, int num)
     {
         int pos = -1;
@@ -31,6 +40,5 @@ public class NumberUtils {
         int[] arrayI = {5, 5, 5, 10, 10, 15, 15, 15, 15, 20, 20, 25};
 
         System.out.println("First position of number 10: " + getPos(arrayI, num));
-
     }
 }
