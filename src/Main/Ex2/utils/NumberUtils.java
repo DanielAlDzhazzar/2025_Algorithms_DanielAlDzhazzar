@@ -181,6 +181,7 @@ public class NumberUtils {
 
         Validation.validateArray(arrayI);
         Validation.validateArray(arrayII);
+        Validation.validateArray(arrayIII);
 
         System.out.println("First position of number 10: " + getPos(arrayI, num));
 
