@@ -145,6 +145,15 @@ public class NumberUtils {
         return true;
     }
 
+    /**
+     * to find maximum value in array of numbers
+     * Note: Exercise 6 is worded strangely, I assume we need to find maximum value in an array(as it is done in tests), also we
+     * don`t need additional int as a param, as it has no use in code
+     *
+     * @param array array on numbers
+     * @return maximum number out of the array
+     */
+
     public static int getMax(int[] array)
     {
         if(array.length == 0){
