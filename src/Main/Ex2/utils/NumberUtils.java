@@ -34,6 +34,14 @@ public class NumberUtils {
         }
     }
 
+    /**
+     * to get last position of provided number
+     *
+     * @param array numerical array to search in
+     * @param num number to be found
+     * @return either position of provided number or a -1 if position is not found
+     */
+
     public static int getLastPos(int[] array, int num)
     {
         int pos = -1;
