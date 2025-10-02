@@ -82,7 +82,13 @@ public class NumberUtils {
         return Arrays.equals(arrayA, arrayB);
     }
 
-
+    /**
+     * to compare 2 arrays with numbers in different positions
+     *
+     * @param arrayA first array to compare
+     * @param arrayB second array to compare
+     * @return if arrays are equal
+     */
 
     public static boolean isEqual(int[] arrayA, int[] arrayB)
     {
