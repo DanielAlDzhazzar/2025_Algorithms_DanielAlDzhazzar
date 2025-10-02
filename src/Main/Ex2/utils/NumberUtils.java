@@ -6,7 +6,7 @@ public class NumberUtils {
      * to find first position of provided number in array
      *
      * @param array numerical array to search in
-     * @param num number to be find
+     * @param num number to be found
      * @return either position of provided number or a -1 if position is not found
      */
 
@@ -29,16 +29,42 @@ public class NumberUtils {
 
         else
         {
-            System.out.println("Number not found");
+            System.out.println("\nNumber not found");
+            return -1;
+        }
+    }
+
+    public static int getLastPos(int[] array, int num)
+    {
+        int pos = -1;
+
+        for(int i = array.length - 1; i >= 0; i--)
+        {
+            if(array[i] == num){
+                pos = i;
+                break;
+            }
+        }
+
+        if (pos != -1)
+        {
+            return pos;
+        }
+
+        else
+        {
+            System.out.println("\nNumber not found");
             return -1;
         }
     }
 
     public static void main(String[] args)
     {
-        int num = 10;
+        int num = 5;
         int[] arrayI = {5, 5, 5, 10, 10, 15, 15, 15, 15, 20, 20, 25};
 
         System.out.println("First position of number 10: " + getPos(arrayI, num));
+
+        System.out.println("Last position of number 10: " + getLastPos(arrayI, num));
     }
 }
