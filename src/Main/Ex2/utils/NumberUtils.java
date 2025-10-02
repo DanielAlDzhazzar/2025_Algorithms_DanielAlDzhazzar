@@ -2,6 +2,7 @@ package Main.Ex2.utils;
 
 import Main.Validation;
 import java.util.Arrays;
+import java.util.Collection;
 
 public class NumberUtils {
 
@@ -110,11 +111,33 @@ public class NumberUtils {
         }
     }
 
+    public static boolean isSubset(int[] arrayA, int[] arrayB)
+    {
+        if (arrayA.length >= arrayB.length || arrayA.length > 0 || arrayB.length > 0){
+            return false;
+        }
+
+        for(int i = 0; i < arrayA.length; i++){
+            boolean match = false;
+            for(int j = 0; j < arrayB.length; j++){
+                if(arrayA[i] == arrayB[j]){
+                    match = true;
+                    break;
+                }
+            }
+            if(!match){
+                return false;
+            }
+        }
+        return true;
+    }
+
     public static void main(String[] args)
     {
         int num = 5;
         int[] arrayI = {5, 5, 5, 10, 10, 15, 15, 15, 15, 20, 20, 25};
         int[] arrayII = {5, 5, 10, 10, 15, 15, 15, 15, 20, 20, 25, 5};
+        int[] arrayIII = {10, 10};
 
         Validation.validateArray(arrayI);
         Validation.validateArray(arrayII);
@@ -126,5 +149,8 @@ public class NumberUtils {
         System.out.println("Is Array A identical to Array B? " + isIdentical(arrayI, arrayII));
 
         System.out.println("Is Array A equal to Array B? " + isEqual(arrayI, arrayII));
+
+        System.out.println("Is Array A is subset to Array B? " + isSubset(arrayIII, arrayI));
+
     }
 }
