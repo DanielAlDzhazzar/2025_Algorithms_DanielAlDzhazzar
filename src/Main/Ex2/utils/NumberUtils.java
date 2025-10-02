@@ -111,6 +111,14 @@ public class NumberUtils {
         }
     }
 
+    /**
+     * to check if 1 array is subset of other
+     *
+     * @param arrayA substitute array
+     * @param arrayB array to compare to
+     * @return if array a is substitute of array b
+     */
+
     public static boolean isSubset(int[] arrayA, int[] arrayB)
     {
         if (arrayA.length >= arrayB.length || arrayA.length > 0 || arrayB.length > 0){
