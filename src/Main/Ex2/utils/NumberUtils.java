@@ -1,5 +1,6 @@
 package Main.Ex2.utils;
 
+import Main.Validation;
 import java.util.Arrays;
 
 public class NumberUtils {
@@ -81,16 +82,43 @@ public class NumberUtils {
         return Arrays.equals(arrayA, arrayB);
     }
 
+
+
+    public static boolean isEqual(int[] arrayA, int[] arrayB)
+    {
+        if (arrayA != null && arrayB != null)
+        {
+            Arrays.sort(arrayA);
+            Arrays.sort(arrayB);
+            return Arrays.equals(arrayA, arrayB);
+        }
+
+        else if (arrayA == null && arrayB == null)
+        {
+            return true;
+        }
+
+        else
+        {
+            return false;
+        }
+    }
+
     public static void main(String[] args)
     {
         int num = 5;
         int[] arrayI = {5, 5, 5, 10, 10, 15, 15, 15, 15, 20, 20, 25};
-        int[] arrayII = {5, 5, 5, 10, 10, 15, 15, 15, 15, 20, 20, 25};
+        int[] arrayII = {5, 5, 10, 10, 15, 15, 15, 15, 20, 20, 25, 5};
+
+        Validation.validateArray(arrayI);
+        Validation.validateArray(arrayII);
 
         System.out.println("First position of number 10: " + getPos(arrayI, num));
 
         System.out.println("Last position of number 10: " + getLastPos(arrayI, num));
 
-        System.out.println("Is Array A equal to Array B? " + isIdentical(arrayI, arrayII));
+        System.out.println("Is Array A identical to Array B? " + isIdentical(arrayI, arrayII));
+
+        System.out.println("Is Array A equal to Array B? " + isEqual(arrayI, arrayII));
     }
 }
