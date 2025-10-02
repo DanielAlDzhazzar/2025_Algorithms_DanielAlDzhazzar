@@ -121,23 +121,46 @@ public class NumberUtils {
 
     public static boolean isSubset(int[] arrayA, int[] arrayB)
     {
-        if (arrayA.length >= arrayB.length || arrayA.length > 0 || arrayB.length > 0){
+        if (arrayA.length >= arrayB.length || arrayA.length > 0 || arrayB.length > 0)
+        {
             return false;
         }
 
-        for(int i = 0; i < arrayA.length; i++){
+        for(int i = 0; i < arrayA.length; i++)
+        {
             boolean match = false;
-            for(int j = 0; j < arrayB.length; j++){
-                if(arrayA[i] == arrayB[j]){
+            for(int j = 0; j < arrayB.length; j++)
+            {
+                if(arrayA[i] == arrayB[j])
+                {
                     match = true;
                     break;
                 }
             }
-            if(!match){
+            if(!match)
+            {
                 return false;
             }
         }
         return true;
+    }
+
+    public static int getMax(int[] array)
+    {
+        if(array.length == 0){
+            return -1;
+        }
+
+        int max = array[0];
+
+        for(int i = 0; i < array.length; i++)
+        {
+            if (max < array[i])
+            {
+                max = array[i];
+            }
+        }
+        return max;
     }
 
     public static void main(String[] args)
@@ -160,5 +183,6 @@ public class NumberUtils {
 
         System.out.println("Is Array A is subset to Array B? " + isSubset(arrayIII, arrayI));
 
+        System.out.println("Highest number in array: " + getMax(arrayIII));
     }
 }
