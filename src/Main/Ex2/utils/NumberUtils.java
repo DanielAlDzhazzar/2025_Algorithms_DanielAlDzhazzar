@@ -68,6 +68,14 @@ public class NumberUtils {
         }
     }
 
+    /**
+     * to compare 2 arrays and if they are identical
+     *
+     * @param arrayA first array to compare
+     * @param arrayB second array to compare
+     * @return if arrays are identical
+     */
+
     public static boolean isIdentical(int[] arrayA, int[] arrayB)
     {
         return Arrays.equals(arrayA, arrayB);
