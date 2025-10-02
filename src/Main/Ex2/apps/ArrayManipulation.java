@@ -1,8 +1,8 @@
-package Ex2.apps;
+package Main.Ex2.apps;
 
 import java.util.Scanner;
-import Ex2.utils.ArrayUtils;
-import Ex1.InputUtility;
+import Main.Ex2.utils.ArrayUtils;
+import Main.Ex1.InputUtility;
 
 public class ArrayManipulation {
     public static void main(String[] args) {

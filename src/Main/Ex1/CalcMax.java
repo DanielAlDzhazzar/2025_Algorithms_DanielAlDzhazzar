@@ -1,4 +1,4 @@
-package Ex1;
+package Main.Ex1;
 
 public class CalcMax {
 

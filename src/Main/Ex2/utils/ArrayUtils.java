@@ -1,4 +1,4 @@
-package Ex2.utils;
+package Main.Ex2.utils;
 
 import java.util.Arrays;
 
@@ -211,6 +211,19 @@ public class ArrayUtils
         return countGreater(array, average);
     }
 
+    public static int[] grow (int[] array)
+    {
+        int[] array10 = new int[array.length + 10];
+
+        for(int i = 0; i < array.length; i++)
+        {
+            array10[i] = array[i];
+        }
+
+
+        return array10;
+    }
+
     public static void main(String[] args)
     {
         double value = 5;
@@ -240,5 +253,7 @@ public class ArrayUtils
         System.out.println("\nNumbers greater than value: " + countGreater(arrayI, value));
 
         System.out.println("\nNumbers greater than average: " + countGreaterThanAverage(arrayI));
+
+        System.out.println("\nArray with added size: " + " and with new size: " + grow(arrayI).length);
     }
 }
