@@ -1,5 +1,6 @@
 package Main.Ex2.apps;
 
+import java.util.Arrays;
 import java.util.Scanner;
 import Main.Ex2.utils.ArrayUtils;
 import Main.Ex1.InputUtility;
@@ -48,6 +49,31 @@ public class ArrayManipulation {
 
         String first = ArrayUtils.findMin(text);
         System.out.println("First element: " + first);
+
+        System.out.println("How big would you want an array to be ");
+        int length = InputUtility.getValidInteger("Size: ");
+        int[] array = new int[length];
+
+        System.out.println("Enter " + length + " values: ");
+
+        for (int i = 0; i < array.length; i++) {
+            array[i] = InputUtility.getValidInteger("Value " + (i + 1) + ": ");
+        }
+
+        System.out.println("Would you like to add more numbers (10)?\n1.Yes\n2.No");
+        int c = InputUtility.getValidInteger("Choice: ");
+
+        if(c == 1){
+            array = ArrayUtils.grow(array);
+
+            System.out.println("Enter " + length + " values: ");
+
+            for (int i = length; i < array.length; i++) {
+                array[i] = InputUtility.getValidInteger("Value " + (i + 1) + ": ");
+            }
+        }
+
+        ArrayUtils.displayArray(array);
     }
 }
 
