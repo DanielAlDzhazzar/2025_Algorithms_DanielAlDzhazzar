@@ -229,6 +229,23 @@ public class ArrayUtils
         return array10;
     }
 
+    /**
+     * method to insert provided number to provided position, also checks if position is in range of provided array
+     *
+     * @param array numerical array
+     * @param value value to be inserted
+     * @param pos position, at which value to be inserted, also checked if in range of an array
+     * @return boolean value if insertion was successful
+     */
+
+    public static boolean insertToPos(int[] array, int value,int pos){
+        if(pos > -1 && pos < array.length){
+            array[pos] = value;
+            return true;
+        }
+        return false;
+    }
+
     public static void main(String[] args)
     {
         double value = 5;
@@ -260,5 +277,7 @@ public class ArrayUtils
         System.out.println("\nNumbers greater than average: " + countGreaterThanAverage(arrayI));
 
         System.out.println("\nArray with added size: " + " and with new size: " + grow(arrayI).length);
+
+        System.out.println("\nInsert 5 to position 7, successfully? " + insertToPos(arrayI, 5, 7));
     }
 }
