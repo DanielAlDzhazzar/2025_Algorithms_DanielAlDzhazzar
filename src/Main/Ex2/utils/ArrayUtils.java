@@ -211,6 +211,13 @@ public class ArrayUtils
         return countGreater(array, average);
     }
 
+    /**
+     * method to grow integer array by 10 in length
+     *
+     * @param array an array to be grown
+     * @return array with length extended by 10
+     */
+
     public static int[] grow (int[] array)
     {
         int[] array10 = new int[array.length + 10];
@@ -219,7 +226,6 @@ public class ArrayUtils
         {
             array10[i] = array[i];
         }
-
         return array10;
     }
 
