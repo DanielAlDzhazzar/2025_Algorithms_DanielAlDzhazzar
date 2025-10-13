@@ -220,7 +220,6 @@ public class ArrayUtils
             array10[i] = array[i];
         }
 
-
         return array10;
     }
 
