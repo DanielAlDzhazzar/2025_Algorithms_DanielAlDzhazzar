@@ -246,6 +246,25 @@ public class ArrayUtils
         return false;
     }
 
+    /**
+     * method to replace a number inside an array using provided position
+     *
+     * @param nums an integer array
+     * @param value new value to be inserted inside an array
+     * @param index position to which this value would be inserted
+     * @return returns old value, before replacing
+     */
+
+    public static int set(int[] nums, int value, int index){
+        if(nums.length > 0 && index >= 0){
+            return -1;
+        }
+        int oldVal = nums[index];
+        nums[index] = value;
+
+        return oldVal;
+    }
+
     public static void main(String[] args)
     {
         double value = 5;
