@@ -1,0 +1,75 @@
+[33m48df784[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m feat: add JavaDoc to public static Book sortedInsert(Book[] array, Book book)
+[33mb0ced30[m[33m ([m[1;31morigin/master[m[33m)[m feat: add JavaDoc to public static Book sortedInsert(Book[] array, Book book)
+[33m19beda1[m feat: add public static Book sortedInsert(Book[] array, Book book) to insert a book in already sorted arrays, return the 1 which fell out of bounds
+[33m9db1394[m docs: add JavaDoc to public static int replace(Book[] array, Book book, Book replacement)
+[33m9408b6e[m feat: add public static int replace(Book[] array, Book book, Book replacement) to go through array and replace specified book with replacement
+[33m26ff70a[m docs: add JavaDoc to public static int deleteAll(Book[] array, Book book)
+[33m509b43d[m feat: add public static int deleteAll(Book[] array, Book book) to delete all instances of book from an array
+[33mefc5a11[m docs: add JavaDocs to public static boolean delete(Book[] array, Book book)
+[33m10ebabf[m feat: add public static boolean delete(Book[] array, Book book) to delete specified book from an array
+[33m1a86fa4[m docs: add JavaDoc to public static Book emptyIndex(Book[] array, int pos)
+[33mf152294[m docs: add JavaDoc to public static String toString(Book[] array)
+[33m8d37073[m feat: add public static String toString(Book[] array) to convert provided array of books into a string
+[33m3989f2e[m docs: add JavaDoc to set(int[] nums, int value, int index)
+[33m81bb349[m docs: add JavaDocs to insertToPos(int[] array, int value,int pos)
+[33m3cdcba5[m feat: added usage to grow (int[] array)
+[33mb5878bc[m docs: add JavaDoc to grow (int[] array)
+[33mf3ebbd3[m feat: add grow (int[] array), to grow integer array(I did it long time ago, I forgot to write appropriate commit message, you can see it in history)
+[33mbc63ab3[m feat: add DataGenerator to correctly create Statistics, in which most of the written methods are used
+[33m5abdf90[m docs: add JavaDoc to getMax(int[] array)
+[33m27e4ecd[m docs: add JavaDoc to getMax(int[] array)
+[33m79a6fa7[m test: test passed
+[33m3288702[m feat: add getMax(int[] array) to find maximum value in array of numbers
+[33m1156c7d[m docs: add JavaDoc to isSubset(int[] arrayA, int[] arrayB)
+[33m11399a9[m feat: add isSubset(int[] arrayA, int[] arrayB) to check if 1 array is subset of other
+[33m99bf71b[m docs: add JavaDoc to isEqual(int[] arrayA, int[] arrayB)
+[33m623fc39[m feat: add isEqual(int[] arrayA, int[] arrayB) to compare 2 with numbers in different positions
+[33m13017aa[m feat: First part of Validation
+[33md5490b7[m test: test passed
+[33mb524ef2[m test: test passed
+[33m46ce5c4[m docs: add JavaDoc to isIdentical(int[] arrayA, int[] arrayB)
+[33m106e86a[m feat: add isIdentical(int[] arrayA, int[] arrayB) to compare 2 arrays
+[33m41a0731[m docs: add JavaDocs to getLastPos(int[] array, int num)
+[33m779fafc[m docs: add JavaDocs to getLastPos(int[] array, int num)
+[33m1f6c9e8[m feat: created getLastPos(int[] array, int num) to get last position of provided number
+[33m9372300[m docs: add JavaDoc to getPos
+[33m61aea5f[m feat: created NumberUtils add getPos to find first position of provided number in array
+[33m815cfc3[m feat: add Greater than average
+[33ma796b02[m docs: add Javadoc to countGreaterThanAverage(int[] array)
+[33m0c1e1b4[m feat: add countGreaterThanAverage(int[] array) to count amount of numbers which are greater than average
+[33m4d37fbb[m docs: add Javadoc to countGreater(int[] array, int value)
+[33m6c816f5[m docs: add Javadoc to countGreater(int[] array, int value)
+[33m92e9a88[m feat: add countGreater(int[] array, int value) to count numbers which are greater than value provided
+[33m1e34dd9[m feat: add frequency count
+[33m31a787d[m docs: add Javadoc to getMostFrequent(int[] array)
+[33mc221e90[m feat: add getMostFrequent(int[] array) to find most frequent number in array
+[33mbbb1ab2[m feat: added count to find 70`s in ArrayManipulation
+[33m519ebd4[m feat: add count(int[] array, value) to count amounts of specified number in array
+[33m58aaf84[m feat: add first element finder to ArrayManipulation
+[33m08d3c99[m docs: add Javadoc for findMin(String[] array)
+[33m4c9a03e[m feat: add findMin(String[] array) to find lowest element in array
+[33m8436c12[m docs: add Javadoc for findMin(int[] array)
+[33m4c8aac3[m feat: add findMin(int[] array) to find lowest number
+[33m11c2686[m feat: add last element finder to ArrayManipulation
+[33m4bf2e9f[m feat: add highest grades finder to ArrayManipulation
+[33mf9c5f10[m docs: add Javadoc for findMax(String[] array)
+[33m41af026[m feat: add findMax(String[] array) method to sort and find last element
+[33m319d0e5[m docs: add Javadoc for findMax(int[] array)
+[33m28c3a83[m feat: added findMax and its example in main
+[33m5c732de[m feat: calculate and display GPA using ArrayUtils.calcAverage
+[33m3424cc2[m feat: store 10 grades in an array using InputUtility
+[33m98c38f9[m docs: add Javadoc for calcAverage(int[] array)
+[33m653e2f2[m feat: add calcAverage for int arrays
+[33m294c8f3[m docs: add Javadoc for displayArray(String[] array) method
+[33m25a4c06[m feat: add displayArray(String[] array) method to display string array elements
+[33m3e95e21[m docs: add Javadoc for displayArray(int[] array) method
+[33m2a9c036[m Ex2 1.1
+[33mb3dd6dd[m Ex2 1.1
+[33m78582ad[m Ex1 Fin
+[33m3e10404[m Fin
+[33m40319e0[m 2.4
+[33me0f9913[m 2.3
+[33mf6bfae8[m 2.2
+[33m73c6fb5[m 2.1
+[33m6354092[m second Ex done
+[33m7883cef[m First Ex done
