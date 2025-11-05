@@ -52,5 +52,19 @@ public class BookUtils {
         return removed;
     }
 
+    public static boolean delete(Book[] array, Book book){
+        if (array == null) throw new IllegalArgumentException("Array cannot be null");
+        if (book == null) throw new IllegalArgumentException("Book cannot be null");
 
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] != null && array[i].equals(book)) {
+                for (int j = i; j < array.length - 1; j++) {
+                    array[j] = array[j + 1];
+                }
+                array[array.length - 1] = null;
+                return true;
+            }
+        }
+        return false;
+    }
 }
