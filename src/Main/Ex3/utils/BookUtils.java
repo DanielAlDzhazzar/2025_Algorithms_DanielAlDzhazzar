@@ -106,5 +106,20 @@ public class BookUtils {
         return count;
     }
 
+    public static int replace(Book[] array, Book book, Book replacement) {
+        if (array == null) throw new IllegalArgumentException("Array cannot be null");
+        if (book == null) throw new IllegalArgumentException("Book cannot be null");
+        if (replacement == null) throw new IllegalArgumentException("Book cannot be null");
 
+        int count = 0;
+
+        for(int i = 0; i < array.length; i++){
+            if(array[i] == book){
+                array[i] = replacement;
+                count++;
+            }
+        }
+
+        return count;
+    }
 }
