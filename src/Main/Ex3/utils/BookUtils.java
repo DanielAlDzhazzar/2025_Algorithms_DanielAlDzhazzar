@@ -3,6 +3,14 @@ package Main.Ex3.utils;
 import Main.Ex3.entities.Book;
 
 public class BookUtils {
+
+    /**
+     * convert provided array of books into a string
+     *
+     * @param array array of books provided
+     * @return String of books in correct format
+     */
+
     public static String toString(Book[] array) {
         String storage = "";
         if (array != null) {
