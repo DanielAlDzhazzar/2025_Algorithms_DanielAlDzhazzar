@@ -247,7 +247,7 @@ public class ArrayUtils
     }
 
     /**
-     * method to replace a number inside an array using provided position
+     * replaces a number inside an array using provided position
      *
      * @param nums an integer array
      * @param value new value to be inserted inside an array
@@ -260,6 +260,7 @@ public class ArrayUtils
             return -1;
         }
         int oldVal = nums[index];
+        System.out.println(oldVal);
         nums[index] = value;
 
         return oldVal;
