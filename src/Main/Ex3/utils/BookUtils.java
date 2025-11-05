@@ -106,6 +106,15 @@ public class BookUtils {
         return count;
     }
 
+    /**
+     * Goes through array and replace specified book with replacement
+     *
+     * @param array the data to be amended
+     * @param book  the Book to be replaced
+     * @param replacement the Book to be inserted
+     * @return an int (the number of Books replaced in the array)
+     */
+
     public static int replace(Book[] array, Book book, Book replacement) {
         if (array == null) throw new IllegalArgumentException("Array cannot be null");
         if (book == null) throw new IllegalArgumentException("Book cannot be null");
@@ -122,4 +131,6 @@ public class BookUtils {
 
         return count;
     }
+
+
 }
