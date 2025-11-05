@@ -132,5 +132,24 @@ public class BookUtils {
         return count;
     }
 
+    public static Book sortedInsert(Book[] array, Book book){
+        int pos = 0;
+        Book outsider;
 
+        if (array == null) throw new IllegalArgumentException("Array cannot be null");
+        if (book == null) throw new IllegalArgumentException("Book cannot be null");
+
+        for(int i = 0; i < array.length; i++){
+            if(array[i] != null && array[i].compareTo(book) > 0){
+                outsider = array[array.length - 1];
+                for(int j = array.length - 1; j > i; j--){
+                    array[j] = array[j - 1];
+                }
+                array[i] = book;
+                return outsider;
+            }
+        }
+
+        return null;
+    }
 }
