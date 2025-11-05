@@ -52,6 +52,14 @@ public class BookUtils {
         return removed;
     }
 
+    /**
+     * to delete specified book from an array
+     *
+     * @param array An array of Books – the data to be amended
+     * @param book A single Book object – the Book to be deleted
+     * @return a boolean (whether the Book was deleted)
+     */
+
     public static boolean delete(Book[] array, Book book){
         if (array == null) throw new IllegalArgumentException("Array cannot be null");
         if (book == null) throw new IllegalArgumentException("Book cannot be null");
@@ -67,4 +75,6 @@ public class BookUtils {
         }
         return false;
     }
+
+
 }
