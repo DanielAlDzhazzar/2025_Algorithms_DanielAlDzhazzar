@@ -30,4 +30,27 @@ public class BookUtils {
         }
         throw new IllegalArgumentException("Incorrect (or no) exception thrown");
     }
+
+    /**
+     * To remove a book from array
+     *
+     * @param array An array of Books – the data to be amended
+     * @param pos A single int – the position to overwrite
+     * @return a Book (the value overwritten)
+     */
+
+    public static Book emptyIndex(Book[] array, int pos) {
+        if (array == null) {
+            throw new IllegalArgumentException("Array cannot be null");
+        }
+        if (pos < 0 || pos >= array.length) {
+            throw new IndexOutOfBoundsException("Invalid index");
+        }
+
+        Book removed = array[pos];
+        array[pos] = null;
+        return removed;
+    }
+
+
 }
