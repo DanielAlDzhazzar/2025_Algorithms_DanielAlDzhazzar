@@ -132,6 +132,14 @@ public class BookUtils {
         return count;
     }
 
+    /**
+     * To insert a book in already sorted arrays
+     *
+     * @param array An array of Books – the data to be amended
+     * @param book A Book object – the Book to be inserted
+     * @return a Book (the Book “lost” from the array after the shift occurs) or null
+     */
+
     public static Book sortedInsert(Book[] array, Book book){
         int pos = 0;
         Book outsider;
